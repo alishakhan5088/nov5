@@ -1,6 +1,7 @@
 name: myworklfow1
 on:
   push:
+  workflow_dispatch:
 jobs:
   myjob1:
     runs-on: [self-hosted, runner2, linux, x64]
