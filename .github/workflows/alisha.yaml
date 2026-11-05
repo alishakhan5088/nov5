@@ -12,5 +12,12 @@ jobs:
         run: |
           cat /etc/os-release
           ls -al
+      - name: mystep2-clone the repo
+        uses: actions/checkout@v4
+      - name: mystep3- check the source code 
+        run: ls -al
+      - name: mystep4- docker image
+        run: docker image build -t alishakhannnnnnnnn03/myimage_nov5:t${{ github.run_number }} -f Dockerfile .
+      - name: mystep5- check the docker image
+        run: docker images
 
-      
